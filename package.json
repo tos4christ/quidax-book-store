@@ -1,0 +1,57 @@
+{
+    "name": "quidax-book-app",
+    "version": "0.0.1",
+    "description": "An online book store",
+    "keywords": [
+        "quidax",
+        "book-app"
+    ],
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "directories": {
+        "test": "__tests__"
+    },
+    "scripts": {
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:cover": "jest --coverage",
+        "lint": "eslint \"src/**/*.js\"",
+        "start": "node ./app/bin/www"
+    },
+    "author": {
+        "name": "Tosin Fetuga",
+        "email": "glmmission@hotmail.com"
+    },
+    "homepage": "https://github.com/tos4christ",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tos4christ"
+    },
+    "bugs": {
+        "url": "https://github.com/tos4christ/quidax/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "jade": "^0.29.0",
+        "morgan": "~1.9.1",
+        "pg": "^8.7.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.5",
+        "babel-jest": "^25.4.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-plugin-import": "^2.20.2",
+        "jest": "^25.4.0",
+        "parcel-bundler": "^1.9.4"
+    },
+    "browserslist": [
+        "last 1 Chrome versions"
+    ]
+}
