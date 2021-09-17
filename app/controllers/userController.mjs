@@ -1,4 +1,4 @@
-import userModel from '../models/userModel';
+import userModel from '../models/userModel.mjs';
 
 // sos controller would only insert the location and userID to the database
 // the remaining work is done on socket.io

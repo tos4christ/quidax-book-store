@@ -1,16 +1,19 @@
 #!/usr/bin/env node
+/* eslint-disable import/extensions */
 
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('app:server');
-var http = require('http');
+import http from 'http';
+import app from '../app.mjs';
+
+import debug from 'debug';
 
 /**
  * Get port from environment and store in Express.
  */
+debug('app:server');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);

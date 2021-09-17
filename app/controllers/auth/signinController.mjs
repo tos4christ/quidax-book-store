@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
-import encoder from '../utility/passwordEncoder';
+import encoder from '../../utility/passwordEncoder.mjs';
 // import database method for saving user
-import userModel from '../models/userModel';
+import userModel from '../../models/userModel.mjs';
 
 const signinController = (req, res) => {
   const { email, password } = req.body;
