@@ -1,6 +1,7 @@
-import app from '../app/app';
 
-describe('app module', () => {
+import server from '../app/bin/www.mjs';
+
+describe('server module', () => {
   test('it exists', async () => {
     expect(app).toBeDefined();
   });

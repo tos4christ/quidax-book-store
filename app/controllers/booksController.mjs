@@ -2,6 +2,7 @@ import pool from '../models/db-connection.mjs';
 import booksModel from '../models/booksModel.mjs';
 
 const booksController = {};
+// TODO -- Ensure to validate data inputs
 
 // Controller query for 20 featured books
 booksController.featured = (req, res) => {
