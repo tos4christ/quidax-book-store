@@ -41,6 +41,11 @@ build/Release
 node_modules/
 jspm_packages/
 
+quidax-bookstore
+quidax-bookstore/
+quidax-bookstore/package.json
+quidax-bookstore/yarn.lock
+
 # TypeScript v1 declaration files
 typings/
 
