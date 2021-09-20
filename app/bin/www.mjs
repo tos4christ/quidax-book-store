@@ -15,7 +15,7 @@ import debug from 'debug';
  */
 debug('app:server');
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
 
 /**
@@ -28,7 +28,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port, () => console.log('server listening now'));
+server.listen(port, () => console.log(`server listening now on port ${port}`));
 server.on('error', onError);
 server.on('listening', onListening);
 

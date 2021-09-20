@@ -2,7 +2,7 @@ const booksModel = {};
 
 booksModel.featured = 'SELECT * FROM books WHERE tag=$1 LIMIT 2';
 
-booksModel.all = 'SELECT * FROM books';
+booksModel.all = 'SELECT * FROM books ORDER BY id';
 
 booksModel.one = 'SELECT * FROM books WHERE id=$1';
 

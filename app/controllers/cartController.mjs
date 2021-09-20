@@ -24,8 +24,9 @@ cartController.total = (req, res) => {
 };
 
 cartController.add = (req, res) => {
-  const {qty, name, price, orderid} = req.body;
-  pool.query(cartModel.add, [qty, name, price, orderid, new Date])
+  const {qty, bookname, price, orderid, author} = req.body;
+  console.log(req.body, 'this is the body');
+  pool.query(cartModel.add, [Number(qty), bookname, Number(price), Number(orderid), new Date, author])
     .then((cart) => {
       res.status(201).json({
         status: 'Success',
@@ -38,9 +39,17 @@ cartController.add = (req, res) => {
 };
 
 cartController.update = (req, res) => {
-  cartModel.list()
+  const { qty , name, orderid } = req.query;
+  console.log(qty, name, orderid, 'these are the items');
+  pool.query(cartModel.update, [Number(qty), name, Number(orderid)])
     .then((cart) => {
-      res.status(201).send({ cart });
+      res.status(201).json({
+        status: 'Success',
+        data: {
+          message: 'item added to cart successfully',
+          cart: cart.rows
+        }
+      });
     });
 };
 

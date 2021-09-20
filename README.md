@@ -1,68 +1,47 @@
-barebones setup for JavaScript / Node projects replace this with a one-liner phrase describing this project or app
+# Running the quidax bookstore front end locally
 
-[![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## To run this project locally
+
+Enter the project directory, run:
+
+## npm install
+-- After the dependencies have been completed, run:
+
+## npm start.
+-- This would start the project locally
+
+### Assumptions made
+-- I assumed there would not be a need to create a register or login page in order to meet the criteria of this test
+   even though, I created registeration, and signing in routes and logic in the backend. Majorly due to time constraint.
+
+## Requirements not covered
+-- Due to time constraint, I could not write tests for the page
+-- I was not able to properly create the routes for the add to cart button on the index page, as items can only be added to cart
+   when a single book is selected from the index page, which takes user to the single page view, the add to cart button here is properly
+   routed to add the book item to cart and create an orderId to persist in the database
+-- I was not able to create a stretched carousel due to time constraints as part of my TODOs
+-- While a search could be made, I was not able to orchestrate the transistion from when a search is conducted to when it is concluded
+   when a cursor is inputed into the search, the search page shows and text inputs starts to filter based on text search. You will need to
+   go back to home to start using the app again. I could not work on the transitioning due to time constraints
+-- I was not able to adjust all the classes of my bootstrap item to accomodate for mobile view. This is due to time constraints, as what is just 
+    needed is to update the mobile dimensions to the containers
+
+## Blockers
+-- The major blocker I experienced was access to power supply to work on this project full time based on the time alloted to flesh out
+    the backend and frontend
+-- In addition to electricity, Internet fluctuations and my computer system crashing from time to time due to windows update were part
+    of the delays
+
+### Constructive feedback
+-- I must say this was a very good challenge, it is a valid way to prove one's ability, what can be improved is the time constraint required
+    to complete the project with respect to the harsh conditions in the country Nigeria. All the same, I believe it is very fair and doable 
+    given an optimal environment
+
+## Areas that scalability can apply to
+-- The storage of Images for this application can be structured and scaled by using image bucket apis to store and retrieve images for the 
+    display of the app in order to make the application light in load time and response time.
 
 
-## About
-
-What is this project about. Ok to enrich here or the section above it with an image. 
-
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
-
-This is a simple JavaScript starter repo template for setting up your project. The setup contains
-
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
-
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
-
-## Why
-
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
-
-## Usage
- How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
-
-
-## Setup
-
-Install `npm` or `yarn` if you dont have any of them already installed. We recommend Yarn though.
-
-After clonning the repo to your local machine and moving into the cloned folder, Run `yarn install` to get started by installing dependencies. 
-
-`src/index.js` is the entry to the project and source code should go into the `src` folder.
-
-All tests should be written in the `__tests__' folder. There's a sample in there.
-
-This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bundler. It is much simpler that WebPack and the others
-
-#### Hints
-
-- Run `npm install` or `yarn install` to get started. We'll assume you are using Yarn.
-- Install additional dependencies: `yarn add <dependency-name> [-D]`
-- Run tests: `yarn test`
-- Run tests with test coverage info: `yarn test:cover`
-- Check the codebase for proper syntax and formatting compliance: `yarn lint`
-- Run your app in local dev mode: `yarn start`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:1234, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
-
-## Authors
-
-List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
-
-## Contributing
-If this project sounds interesting to you and you'd like to contribute, thank you!
-First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
-2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
-3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
-
-## Acknowledgements
-
-Did you use someone else’s code?
-Do you want to thank someone explicitly?
-Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
-
-It's powerful to always give credit.
-
-## LICENSE
-MIT
 
